@@ -1,8 +1,10 @@
+<<<<<<< HEAD
 var bg = {
     setFs: function(fsObj){
       bg.fs = fsObj;
     },
 
+    
     saveTags: function(post) {
       //We get then we set
       chrome.storage.sync.get("posts", function(data) {
@@ -18,9 +20,8 @@ var bg = {
         
         //Save changes
         chrome.storage.sync.set({"posts": array}, function() {
-        
         });
-      });
+      }
     },
 
     
@@ -33,31 +34,43 @@ var bg = {
         bg.fs.setTags(data);
       });
     },
+    
 
     saveInterval: function(intervalValue) {
 
     },
+    
 
     retrieveInterval: function(intervalValue) {
     
     },
-    
-    /*
-    authenticateUser: function(username, password) {
-      var consumer = {};
-
-      consumer.example = { 
-          consumerKey   : "myKey", 
-          consumerSecret: "mySecret",
-          serviceProvider:
-          { 
-            signatureMethod     : "HMAC-SHA1",
-            requestTokenURL     : "http://www.tumblr.com/oauth/request_token",
-            userAuthorizationURL: "http://www.tumblr.com/oauth/authorize",
-            accessTokenURL      : "http://localhost/oauth-provider/access_token",
-            echoURL             : "http://localhost/oauth-provider/echo"
-          }
-      };
-    }
-    */
 }
+
+
+
+var tumblr = require('tumblr.js');
+
+var oauth = ChromeExOAuth.initBackgroundPage({
+  'request_url': "http://www.tumblr.com/oauth/request_token",
+  'authorize_url': "http://www.tumblr.com/oauth/authorize",
+  'access_url': "http://www.tumblr.com/oauth/access_token",
+  'consumer_key': "NugbEX3qh96IleVqn2eGLTphq8WWFb1NDhC15XfcdHm5xtjdVb",
+  'consumer_secret': "8j0CkWdhKKrxuokj2OZEPH43uvgFf9eReKzFYI57ubXkapBnEe"
+});
+
+function callback(resp, xhr) {
+  // ... Process text response ...
+};
+
+function onAuthorized() {
+  var url = 'https://docs.google.com/feeds/default/private/full';
+  var request = {
+    'method': 'GET',
+    'parameters': {'alt': 'json'}
+  };
+
+  // Send: GET https://docs.google.com/feeds/default/private/full?alt=json
+  oauth.sendSignedRequest(url, callback, request);
+};
+
+oauth.authorize(onAuthorized);
