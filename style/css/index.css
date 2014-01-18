@@ -90,9 +90,8 @@ img{
   background-color:purple;
 }
 
-#tag{
-  position:relative;
-  float:left;
-  clear:both;
+.tag{
   width:100%;
+  margin:0 0 10px 0;
+  background-color:red;
 }
