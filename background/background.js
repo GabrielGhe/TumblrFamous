@@ -1,16 +1,16 @@
 var bg {  
-  saveTags: function saveTag (tag) {
+  saveTags: function savePost (post) {
       // by passing an object you can define default values e.g.: []
-      chrome.storage.local.get({tags: []}, function (result) {
+      chrome.storage.local.get({posts: []}, function (result) {
         // the input argument is ALWAYS an object containing the queried keys
         // so we select the key we need
-        var tags = result.tags;
-        tags.push({tagName: tag});
+        var posts = result.posts;
+        posts.splice(0, 0, {post: post});
         // set the new array value to the same key
-        chrome.storage.local.set({tags: tags}, function () {
+        chrome.storage.local.set({posts: posts}, function () {
             // you can use strings instead of objects
             // if you don't  want to define default values
-            chrome.storage.local.get('tags', function (result) {
+            chrome.storage.local.get('posts', function (result) {
                 // updateTagList(result.tags); <-- Doesn't exist yet
             });
         });
@@ -18,9 +18,9 @@ var bg {
     // siteList.push(siteName);
     },
 
-    retrieveTags: function() {
-      chrome.storage.local.get('tags', function (result) {
-        console.log(result.tags);
+    retrievePosts: function() {
+      chrome.storage.local.get('posts', function (result) {
+        console.log(result.posts);
       });
     },
 
