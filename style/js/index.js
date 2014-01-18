@@ -18,7 +18,15 @@ var fs = {
     
     //add the divs
     for(var i=0; i < data.length; i++){
-      $("#tagsContent").prepend("<div class='tagcontainer'><span class='tagtext'>" + data[i] + "<img src='ui/delete.png'></span></div>");
+      //create new dice, append span, add class, then give it html
+      var a = $("<div class='tagcontainer'><span class='tagtext'>" + data[i] +"</span></div>");
+      var b = $("<img>").addClass("remove").attr("src", "ui/delete.png");
+      a.append(b);
+      $("#tagsContent").append(a);
+      b.click(function () {
+        bg.deletePost(a.index());
+        $(this).parent().remove();
+      });
     }
   }
 };
@@ -69,6 +77,7 @@ $(document).ready(function(){
 	## newTagButton click event ##
 	######
 	*/
+
 	newTagButton.click(function(){
     $(this).hide();
     newTagInput.show();
@@ -131,8 +140,15 @@ $(document).ready(function(){
           bg.saveTags(tagInput);
           
           //create and append new div for new tag
-          $("#tagsContent").prepend("<div class='tagcontainer'><span class='tagtext'>" + tagInput +"<img src='ui/delete.png'></span></div>");
-          
+          var a = $("<div class='tagcontainer'><span class='tagtext'>" + tagInput +"</span></div>");
+          var b = $("<img>").addClass("remove").attr("src", "ui/delete.png");
+          a.append(b);
+          $("#tagsContent").append(a);
+          b.click(function () {
+            console.log("You made it this far");
+            bg.deletePost(a.index());
+            $(this).parent().remove();
+          });
           //empty div content
           newTagInput.val("");
           newTagInput.hide();
