@@ -92,17 +92,58 @@ input:focus{
  * * * * * * */
  
 #tagsHeader{
-  height:50px;
+  height:30px;
   width:100%;
-  background-color:blue;
+    margin-top: 20px;
+  
+}
+#tagsHeader h1{
+	font-size: 120%;
+  font-weight: bold;
+  float: left;
+  padding: 0;
+  margin: 0;
+  padding-right: 10px;
+  padding-left: 10px;
+
+}
+
+#addbutton{
+
+	float: left;
+	width: 20px;
+	height: 20px;
+	border-radius: 3px;
+	background-color: #529ecc;
+	color: white;
+	font-weight: bold;
+	text-align: center;
 }
 
 #tagsContent{
-  height:250px;
+  height:220px;
   width:100%;
   margin-top:10px;
   overflow: scroll;
   overflow-x:hidden;
+}
+#settingButton{
+	position:absolute;
+	margin-top: 20px;
+	margin-left: 50px;
+	width:140px;
+	height:30px;
+	border-radius: 5px;
+	background-color: #529ecc;
+	color:white;
+	font-weight: bold;
+	text-align: center;
+	line-height: 30px;
+	-webkit-transition: all 0.15s;
+  cursor:pointer;
+}
+#settingButton:hover{
+	background-color: #4889aa;
 }
 
 .tagcontainer{
