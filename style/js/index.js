@@ -22,7 +22,7 @@ $(document).ready(function(){
 	
 	//put up divs
 	for(var i=0; i < tags.length; i++){
-		
+		//TODO
 	}
 	
 	
@@ -66,20 +66,16 @@ $(document).ready(function(){
           //if the tags collection has the same length as the input
           if(tags[i].length == tagInput.length){
             //go through each tag collection to compare
-            for(var y=0; y < tags[i].length; i++){
+            for(var y=0; y < tags[i].length; y++){
               if(tags[i][y] == tagInput[y]){
                 break;
               }
               
-              if(
+              //if it's the last item and it passed the test, bad
+              if(y + 1 == tags[i].length){
+                good = 2;
+              }
             }
-          }
-          
-        
-        
-        
-          if(tags[i].tagName == tagInput){
-            good = 2; //2 means already existing tag
           }
         }
       }
@@ -97,7 +93,7 @@ $(document).ready(function(){
           infoDiv.html("New tag added").show().delay(1000).hide();
           
           //send new tag to bg to save
-          bg.saveTags({tagName: tagInput});
+          bg.saveTags(tagInput.join(" "));
           
           //create and append new div for new tag
           //TODO
