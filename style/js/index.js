@@ -79,8 +79,28 @@ $(document).ready(function(){
 
     });
   });
+
+
+  $("#knob").click(function(){
+    console.log($(this).css('margin-left'));
+    if ($(this).css('margin-left')=="2px"){
+      $(this).animate({"margin-left":"18px"},200);
+      $(this).css("background-color","#529ecc");
+    }else{
+      $(this).css("background-color","#c6c6c6");
+      $(this).animate({"margin-left":"2px"},200);
+    }
+    });
+
+  $("#backButton").click(function(){
+    $("#setContainer").hide();
+    $("#tagsContainer").show();
+  });
   
-  
+  $("#settingButton").click(function(){
+    $("#setContainer").show();
+    $("#tagsContainer").hide();
+  });
   /*
 	######
 	## newTagInput enter key pressed ##
@@ -143,7 +163,7 @@ $(document).ready(function(){
           //empty div content
           newTagInput.val("");
           newTagInput.hide();
-          newTagButton.show();
+          newTagButton.show().animate({width:"20px"},500);
           break;
         case 1:
           //set class of info to invalid name
