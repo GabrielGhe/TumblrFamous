@@ -45,6 +45,9 @@ input:focus{
 	padding-left: 30px;
 	padding-right: 30px;
 }
+#setContainer{
+	padding-left: 40px;
+}
 
 /* * * * * * *
  * 
@@ -133,7 +136,7 @@ input:focus{
 }
 
 #tagsContent{
-  height:220px;
+  height:210px;
   width:100%;
   margin-top:10px;
   overflow: auto;
@@ -153,6 +156,9 @@ input:focus{
 	line-height: 45px;
 	-webkit-transition: all 0.15s;
   cursor:pointer;
+}
+#backButton{
+	-webkit-transform:translateX(-10px);
 }
 #settingButton:hover,#backButton:hover{
 	background-color: #4889aa;
@@ -182,7 +188,7 @@ input:focus{
  * * * * * * */
 #setContainer input{
 	display:inline;
-	height:15px;
+	height:18px;
 	width: 25px;
 	margin-left:5px;
 	margin-right: 5px;
