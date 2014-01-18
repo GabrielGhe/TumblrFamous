@@ -20,7 +20,7 @@ var fs = {
     for(var i=0; i < data.length; i++){
       //create new dice, append span, add class, then give it html
       var a = $("<div class='tagcontainer'></div>");
-      var b = $("<span class='tagtext'>" + tagInput+ "</span>");
+      var b = $("<span class='tagtext'>" + data[i] + "</span>");
       var c = $("<img class='remove' src='ui/delete.png'></img>");
       b.append(c);
       a.append(b);
