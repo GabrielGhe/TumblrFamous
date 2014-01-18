@@ -1,4 +1,10 @@
 var bg = chrome.extension.getBackgroundPage().bg;
+//LoginContainer vars
+var loginContainer;
+var emailInput;
+var passInput;
+var authButton;
+//TagsContainer vars
 var tagDivContainer;//main div which holds the tag divs
 var infoDiv;//div for showing alerts
 var newTagButton;//add new tag button
@@ -15,10 +21,33 @@ $(document).ready(function(){
 	/* * * * * * * * *
     Cache Variables 
 	 * * * * * * * * */
+
+  //LoginContainer
+  loginContainer = $("#loginContainer");
+  emailInput = $("#email");
+  passInput = $("#password");
+  authButton = $("#authButton");
+  //TagsContainer
+  tagsContainer = $("#tagsContainer");
 	infoDiv = $("#infoDiv");
 	newTagButton = $("#newTagButton");
 	newTagInput = $("#newTagInput");
-	tags = bg.retrieveTags();
+  
+  tagsContainer.hide();
+  console.log(bg);
+	tags = bg.retrievePosts();
+  
+  
+  //authentication button click event
+  authButton.click(function(){
+    //do auth...
+    //TODO
+    
+    //switch to tags div
+    console.log("here");
+    loginContainer.hide();
+    tagsContainer.fadeIn(200);
+  });
 	
 	//put up divs
 	for(var i=0; i < tags.length; i++){
@@ -38,7 +67,7 @@ $(document).ready(function(){
 	newTagButton.click(function(){
     $(this).hide();
     newTagInput.show();
-  }
+  });
   
   
   /*
@@ -46,7 +75,7 @@ $(document).ready(function(){
 	## newTagInput enter key pressed ##
 	######
 	*/
-  newTagInput.keyup(function (e) {
+  newTagInput.keypress(function (e) {
     if (e.keyCode == 13) {
     
       var tagInput = newTagInput.val();

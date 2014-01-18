@@ -29,11 +29,17 @@ img{
 	width:80px;
 	margin-left:90px;
 }
-#login{
+
+/* * * * * * *
+ * 
+ * Login IDs
+ *
+ * * * * * * */
+#loginContainer, #tagsContainer, #setContainer{
 	padding-left: 30px;
 	padding-right: 30px;
 }
-#pw{
+#password{
 	margin-top: -10px;
 }
 #divider{
@@ -47,7 +53,7 @@ img{
 	margin-left: 1px;
 }
 
-#button{
+#authButton{
 	position:absolute;
 	margin-top: 30px;
 	width:253px;
@@ -59,8 +65,14 @@ img{
 	text-align: center;
 	line-height: 40px;
 	-webkit-transition: all 0.15s;
-
+  cursor:pointer;
 }
-#button:hover{
+#authButton:hover{
 	background-color: #4889aa;
 }
+
+/* * * * * * *
+ * 
+ * Tags IDs
+ *
+ * * * * * * */
