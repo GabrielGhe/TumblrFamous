@@ -19,8 +19,10 @@ var fs = {
     //add the divs
     for(var i=0; i < data.length; i++){
       //create new dice, append span, add class, then give it html
-      var a = $("<div class='tagcontainer'><span class='tagtext'>" + data[i] +"</span></div>");
-      var b = $("<img>").addClass("remove").attr("src", "ui/delete.png");
+      var a = $("<div class='tagcontainer'></div>");
+      var b = $("<span class='tagtext'>" + tagInput+ "</span>");
+      var c = $("<img class='remove' src='ui/delete.png'></img>");
+      b.append(c);
       a.append(b);
       $("#tagsContent").prepend(a);
       b.click(function () {
@@ -127,6 +129,9 @@ $(document).ready(function(){
       } else {
         //split input tags by ","
         var tagInput = tagInput.split(",");
+        for(var i=0; i < tagInput.length; i++){
+          tagInput[i] = tagInput[i].trim();
+        }
         tagInput.sort();
         
         //check if the tag already exists
@@ -155,6 +160,7 @@ $(document).ready(function(){
       1 means invalid tag name
       2 means already existing tag name
       */
+      console.log(good);
       infoDiv.removeClass("infoGood").removeClass("infoBadName").removeClass("infoExists");
       switch(good){
         case 0:
@@ -167,8 +173,10 @@ $(document).ready(function(){
           bg.saveTags(tagInput);
           
           //create and append new div for new tag
-          var a = $("<div class='tagcontainer'><span class='tagtext'>" + tagInput +"</span></div>");
-          var b = $("<img>").addClass("remove").attr("src", "ui/delete.png");
+          var a = $("<div class='tagcontainer'></div>");
+          var b = $("<span class='tagtext'>" + tagInput+ "</span>");
+          var c = $("<img class='remove' src='ui/delete.png'></img>");
+          b.append(c);
           a.append(b);
           $("#tagsContent").prepend(a);
           b.click(function () {
