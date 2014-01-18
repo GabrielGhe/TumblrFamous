@@ -24,7 +24,7 @@ input:focus{
 	outline:none;
 
 }
-img{
+.loginContainer img{
 	padding-top: 40px;
 	width:80px;
 	margin-left:90px;
@@ -32,9 +32,10 @@ img{
 
 /* * * * * * *
  * 
- * Login IDs
+ * Containers
  *
  * * * * * * */
+
 #loginContainer{
 	display:none;
 	padding-left: 30px;
@@ -44,6 +45,13 @@ img{
 	padding-left: 30px;
 	padding-right: 30px;
 }
+
+/* * * * * * *
+ * 
+ * Login IDs
+ *
+ * * * * * * */
+
 
 #password{
 	margin-top: -10px;
@@ -93,12 +101,22 @@ img{
   height:250px;
   width:100%;
   margin-top:10px;
-  background-color:purple;
   overflow: scroll;
+  overflow-x:hidden;
 }
 
-.tag{
-  width:100%;
-  margin:0 0 10px 0;
-  background-color:red;
+.tagcontainer{
+	padding:5px;
+	margin-bottom: 10px;
+}
+.tagtext{
+	background-color: white;
+	padding:5px;
+	border-radius: 4px;
+	margin:5px;
+}
+.tagtext img{
+	width: 15px;
+	padding-left: 5px;
+	margin-bottom: -3px;
 }
