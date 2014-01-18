@@ -36,7 +36,7 @@ $(document).ready(function(){
   tagsContainer.hide();
   console.log(bg);
 	tags = bg.retrievePosts();
-  
+  console.log(tags);
   
   //authentication button click event
   authButton.click(function(){
