@@ -7,15 +7,18 @@ var bg = {
     saveTags: function(post) {
       //We get then we set
       chrome.storage.sync.get("posts", function(data) {
-        console.log(data);
         array = [];
         
         //if it exists we add to array else make new one
-        if(data){
-          //TODO
+        if(data.posts){
+          array = data.posts;
+          array.push(post);
         } else {
           array.push(post);
         }
+        
+        console.log("inside saveTags");
+        console.log(data);
         
         //Save changes
         chrome.storage.sync.set({"posts": array}, function() {
@@ -27,11 +30,13 @@ var bg = {
     
     retrievePosts: function() {
       chrome.storage.sync.get("posts", function(data) {
-        res = data
-        if(!data){
-          res = ["blah", "bluh", "blih"];
+        console.log("inside retrievePosts");
+        console.log(data);
+        res = data.posts;
+        if(!data.posts){
+          res = [];
         }
-        bg.fs.setTags(["blah", "bluh", "blih"]);
+        bg.fs.setTags(res);
       });
     },
     

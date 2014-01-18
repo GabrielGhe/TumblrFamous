@@ -18,7 +18,7 @@ var fs = {
     
     //add the divs
     for(var i=0; i < data.length; i++){
-      $("#tagsContent").append("<div class='tagcontainer'><span class='tagtext'>" + data[i] +"<img src='ui/delete.png'></span></div>");
+      $("#tagsContent").prepend("<div class='tagcontainer'><span class='tagtext'>" + data[i] + "<img src='ui/delete.png'></span></div>");
     }
   }
 };
@@ -131,7 +131,7 @@ $(document).ready(function(){
           bg.saveTags(tagInput);
           
           //create and append new div for new tag
-          $("#tagsContent").append("<div class='tagcontainer'><span class='tagtext'>" + tagInput +"<img src='ui/delete.png'></span></div>");
+          $("#tagsContent").prepend("<div class='tagcontainer'><span class='tagtext'>" + tagInput +"<img src='ui/delete.png'></span></div>");
           
           //empty div content
           newTagInput.val("");
