@@ -128,7 +128,7 @@ $(document).ready(function(){
         good = 1; //1 means invalid name
       } else {
         //split input tags by ","
-        var tagInput = tagInput.split(",");
+        var tagInput = tagInput.split(" ");
         for(var i=0; i < tagInput.length; i++){
           tagInput[i] = tagInput[i].trim();
         }
@@ -136,17 +136,19 @@ $(document).ready(function(){
         
         //check if the tag already exists
         for(var i=0; i < tags.length; i++){
+          var temp = tags[i].split(" ");
         
           //if the tags collection has the same length as the input
-          if(tags[i].length == tagInput.length){
+          if(temp.length == tagInput.length){
             //go through each tag collection to compare
-            for(var y=0; y < tags[i].length; y++){
-              if(tags[i][y] != tagInput[y]){
+            for(var y=0; y < temp.length; y++){
+            
+              if(temp[y] != tagInput[y]){
                 break;
               }
               
               //if it's the last item and it passed the test, bad
-              if(y + 1 == tags[i].length){
+              if(y + 1 == temp.length){
                 good = 2;
               }
             }
