@@ -55,12 +55,32 @@ $(document).ready(function(){
       //check if the values saved are valid
       if(tagInput.trim() == ""){
         good = 1; //1 means invalid name
-      }
-      
-      //check if the tag already exists
-      for(var i=0; i < tags.length; i++){
-        if(tags[i].tagName == tagInput){
-          good = 2; //2 means already existing tag
+      } else {
+        //split input tags by ","
+        var tagInput = tagInput.split(",");
+        tagInput.sort();
+        
+        //check if the tag already exists
+        for(var i=0; i < tags.length; i++){
+        
+          //if the tags collection has the same length as the input
+          if(tags[i].length == tagInput.length){
+            //go through each tag collection to compare
+            for(var y=0; y < tags[i].length; i++){
+              if(tags[i][y] == tagInput[y]){
+                break;
+              }
+              
+              if(
+            }
+          }
+          
+        
+        
+        
+          if(tags[i].tagName == tagInput){
+            good = 2; //2 means already existing tag
+          }
         }
       }
       
