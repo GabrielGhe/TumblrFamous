@@ -20,8 +20,19 @@ var bg {
 
     retrieveTags: function() {
       chrome.storage.local.get('tags', function (result) {
-        return result.tags;
+        console.log(result.tags);
       });
+    },
 
+    saveInterval: function saveInterval (intervalValue) {
+      chrome.storage.local.set((interval: intervalValue), function (result) {
+        console.log(result.interval);
+      });
+    },
+
+    retrieveInterval: function retrieveInterval (intervalValue) {
+      chrome.storage.local.get('interval', function (result) {
+        console.log(result.interval);
+      });
     }
 }
