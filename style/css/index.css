@@ -36,12 +36,12 @@ input:focus{
  *
  * * * * * * */
 
-#loginContainer{
+#loginContainer, #setContainer{
 	display:none;
 	padding-left: 30px;
 	padding-right: 30px;
 }
-#tagsContainer, #setContainer{
+#tagsContainer{
 	padding-left: 30px;
 	padding-right: 30px;
 }
@@ -139,40 +139,105 @@ input:focus{
   overflow: scroll;
   overflow-x:hidden;
 }
-#settingButton{
+#settingButton,#backButton{
 	position:absolute;
-	margin-top: 20px;
+	bottom:20px;
 	margin-left: 50px;
 	width:140px;
-	height:30px;
+	height:45px;
 	border-radius: 5px;
 	background-color: #529ecc;
 	color:white;
 	font-weight: bold;
 	text-align: center;
-	line-height: 30px;
+	line-height: 45px;
 	-webkit-transition: all 0.15s;
   cursor:pointer;
 }
-#settingButton:hover{
+#settingButton:hover,#backButton:hover{
 	background-color: #4889aa;
 }
 
 .tagcontainer{
 	padding:5px;
 	margin-bottom: 10px;
+
 }
 .tagtext{
 	background-color: white;
 	padding:5px;
 	border-radius: 4px;
 	margin:5px;
+
 }
 .remove{
 	width: 15px;
 	padding-left: 5px;
 	margin-bottom: -3px;
 }
+/* * * * * * *
+ * 
+ * Settings IDs
+ *
+ * * * * * * */
+#setContainer input{
+	display:inline;
+	height:15px;
+	width: 25px;
+	margin-left:5px;
+	margin-right: 5px;
+	margin-top: 10px;/*
+	-webkit-transform:translateY(5px);*/
+	font-size: 12px;
+	padding-left: 3px;
+}
+#settingHeader{
+  height:30px;
+  width:100%;
+    margin-top: 20px;
+  
+}
+#setContainer h1{
+	font-size:120%;
+	  padding: 0;
+  margin: 0;
+}
+#setContainer div div{
+	padding: 10px 0 10px 0; 
+}
+#setContainer h1{
+	margin-bottom: 0px;
+}
+#slider{
+	margin-top: 10px;
+	width:40px;
+	height:4px;
+	background-color: white;
+	border-radius:15px;
+	display: inline-block;
+}
+#slider span{
+	position: absolute;
+	-webkit-transform:translate(50px,-5px);
+}
+#knob{
+	position: absolute;
+	width:20px;
+	height:0px;
+	border-radius: 10px;
+	background-color: #c6c6c6;
+	margin-top:-8px;
+	margin-left:2px;/*
+	-webkit-transition:all 0.15s;*/
+	/*
+	-webkit-transfrom:translateY(-5px);*/
+}
+#backButton{
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+ 
+/**********SCROLLBAR********/
 
 /* Let's get this party started */
 ::-webkit-scrollbar {

@@ -56,12 +56,15 @@ $(document).ready(function(){
   bg.setFs(fs); //Giving this script to the bg object so that it can add tags
   //tagsContainer.hide();
 	bg.retrievePosts();
+  newTagInput.hide();
   
   //authentication button click event
   authButton.click(function(){
     //do auth...
     //TODO
     
+
+
     //switch to tags div
     console.log("here");
     loginContainer.hide();
@@ -79,11 +82,34 @@ $(document).ready(function(){
 	*/
 
 	newTagButton.click(function(){
-    $(this).hide();
-    newTagInput.show();
+    $(this).animate({width:"131px"},500,function(){
+      $(this).hide();
+      newTagInput.show().focus();
+
+    });
+  });
+
+
+  $("#knob").click(function(){
+    console.log($(this).css('margin-left'));
+    if ($(this).css('margin-left')=="2px"){
+      $(this).animate({"margin-left":"18px"},200);
+      $(this).css("background-color","#529ecc");
+    }else{
+      $(this).css("background-color","#c6c6c6");
+      $(this).animate({"margin-left":"2px"},200);
+    }
+    });
+
+  $("#backButton").click(function(){
+    $("#setContainer").hide();
+    $("#tagsContainer").show();
   });
   
-  
+  $("#settingButton").click(function(){
+    $("#setContainer").show();
+    $("#tagsContainer").hide();
+  });
   /*
 	######
 	## newTagInput enter key pressed ##
@@ -122,6 +148,8 @@ $(document).ready(function(){
           }
         }
       }
+    }
+  });
       
       /*
       0 is good
@@ -152,7 +180,7 @@ $(document).ready(function(){
           //empty div content
           newTagInput.val("");
           newTagInput.hide();
-          newTagButton.show();
+          newTagButton.show().animate({width:"20px"},500);
           break;
         case 1:
           //set class of info to invalid name
@@ -166,6 +194,4 @@ $(document).ready(function(){
           break;
         default:break;
       }
-    }
-	});
 });
