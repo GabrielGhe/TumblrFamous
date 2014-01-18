@@ -160,7 +160,7 @@ $(document).ready(function(){
 	## tag removal enter key pressed ##
 	######
 	*/
-  $(".tagcontainer").on("click", ".remove", function(e) {
-    console.log("Herro");
+  $('.remove').click(function(){
+    console.log("hello");
   });
 });
