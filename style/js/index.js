@@ -42,7 +42,7 @@ $(document).ready(function(){
   //TagsContainer
   tagsContainer = $("#tagsContainer");
 	infoDiv = $("#infoDiv");
-	newTagButton = $("#newTagButton");
+	newTagButton = $("#addbutton");
 	newTagInput = $("#newTagInput");
   
   bg.setFs(fs); //Giving this script to the bg object so that it can add tags
@@ -71,7 +71,7 @@ $(document).ready(function(){
 	*/
 	newTagButton.click(function(){
     $(this).hide();
-    newTagInput.show();
+    console.log("test");
   });
   
   
