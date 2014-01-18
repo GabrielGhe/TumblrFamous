@@ -67,7 +67,7 @@ $(document).ready(function(){
           if(tags[i].length == tagInput.length){
             //go through each tag collection to compare
             for(var y=0; y < tags[i].length; y++){
-              if(tags[i][y] == tagInput[y]){
+              if(tags[i][y] != tagInput[y]){
                 break;
               }
               

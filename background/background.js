@@ -34,5 +34,21 @@ var bg {
       chrome.storage.local.get('interval', function (result) {
         console.log(result.interval);
       });
+    },
+
+    authenticateUser: function authenticateUser (username, password) {
+      var consumer = {};
+
+      consumer.example =
+      { consumerKey   : "myKey"
+      , consumerSecret: "mySecret"
+      , serviceProvider:
+        { signatureMethod     : "HMAC-SHA1"
+        , requestTokenURL     : "http://www.tumblr.com/oauth/request_token"
+        , userAuthorizationURL: "http://www.tumblr.com/oauth/authorize"
+        , accessTokenURL      : "http://localhost/oauth-provider/access_token"
+        , echoURL             : "http://localhost/oauth-provider/echo"
+        }
+};
     }
 }
