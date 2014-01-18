@@ -48,12 +48,15 @@ $(document).ready(function(){
   bg.setFs(fs); //Giving this script to the bg object so that it can add tags
   //tagsContainer.hide();
 	bg.retrievePosts();
+  newTagInput.hide();
   
   //authentication button click event
   authButton.click(function(){
     //do auth...
     //TODO
     
+
+
     //switch to tags div
     console.log("here");
     loginContainer.hide();
@@ -70,8 +73,11 @@ $(document).ready(function(){
 	######
 	*/
 	newTagButton.click(function(){
-    $(this).hide();
-    newTagInput.show();
+    $(this).animate({width:"131px"},500,function(){
+      $(this).hide();
+      newTagInput.show().focus();
+
+    });
   });
   
   

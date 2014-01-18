@@ -36,12 +36,12 @@ input:focus{
  *
  * * * * * * */
 
-#loginContainer{
+#loginContainer, #tagsContainer{
 	display:none;
 	padding-left: 30px;
 	padding-right: 30px;
 }
-#tagsContainer, #setContainer{
+#setContainer{
 	padding-left: 30px;
 	padding-right: 30px;
 }
@@ -161,18 +161,47 @@ input:focus{
 .tagcontainer{
 	padding:5px;
 	margin-bottom: 10px;
+
 }
 .tagtext{
 	background-color: white;
 	padding:5px;
 	border-radius: 4px;
 	margin:5px;
+
 }
 .tagtext img{
 	width: 15px;
 	padding-left: 5px;
 	margin-bottom: -3px;
 }
+/* * * * * * *
+ * 
+ * Settings IDs
+ *
+ * * * * * * */
+#setContainer input{
+	display:inline;
+	height:15px;
+	width: 25px;
+	margin-left:5px;
+	margin-right: 5px;
+	margin-top: 10px;/*
+	-webkit-transform:translateY(5px);*/
+	font-size: 12px;
+	padding-left: 3px;
+}
+#setContainer div{
+	padding: 10px 0 10px 0; 
+}
+#slider{
+	width:20px;
+	height:15px;
+	background-color: white;
+	border-radius: 7px;
+}
+ 
+/**********SCROLLBAR********/
 
 /* Let's get this party started */
 ::-webkit-scrollbar {
@@ -190,8 +219,7 @@ input:focus{
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: rgba(255,0,0,0.8); 
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background: rgba(155,155,155,0.8); 
 }
 ::-webkit-scrollbar-thumb:window-inactive {
 	background: rgba(255,0,0,0.4); 
