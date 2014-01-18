@@ -22,7 +22,7 @@ var fs = {
       var a = $("<div class='tagcontainer'><span class='tagtext'>" + data[i] +"</span></div>");
       var b = $("<img>").addClass("remove").attr("src", "ui/delete.png");
       a.append(b);
-      $("#tagsContent").append(a);
+      $("#tagsContent").prepend(a);
       b.click(function () {
         bg.deletePost(a.index());
         $(this).parent().remove();
@@ -170,7 +170,7 @@ $(document).ready(function(){
           var a = $("<div class='tagcontainer'><span class='tagtext'>" + tagInput +"</span></div>");
           var b = $("<img>").addClass("remove").attr("src", "ui/delete.png");
           a.append(b);
-          $("#tagsContent").append(a);
+          $("#tagsContent").prepend(a);
           b.click(function () {
             console.log("You made it this far");
             bg.deletePost(a.index());
