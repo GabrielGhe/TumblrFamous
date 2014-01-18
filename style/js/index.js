@@ -42,7 +42,7 @@ $(document).ready(function(){
   //TagsContainer
   tagsContainer = $("#tagsContainer");
 	infoDiv = $("#infoDiv");
-	newTagButton = $("#newTagButton");
+	newTagButton = $("#addbutton");
 	newTagInput = $("#newTagInput");
   
   bg.setFs(fs); //Giving this script to the bg object so that it can add tags
@@ -71,7 +71,7 @@ $(document).ready(function(){
 	*/
 	newTagButton.click(function(){
     $(this).hide();
-    newTagInput.show();
+    console.log("test");
   });
   
   
@@ -126,11 +126,12 @@ $(document).ready(function(){
           infoDiv.addClass("infoGood");
           infoDiv.html("New tag added").show().delay(1000).hide();
           
+          tagInput = tagInput.join(" ");
           //send new tag to bg to save
-          bg.saveTags(tagInput.join(" "));
+          bg.saveTags(tagInput);
           
           //create and append new div for new tag
-          //TODO
+          $("#tagsContent").append("<div class='tagcontainer'><span class='tagtext'>" + tagInput +"<img src='ui/delete.png'></span></div>");
           
           //empty div content
           newTagInput.val("");
