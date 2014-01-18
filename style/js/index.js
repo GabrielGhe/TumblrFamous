@@ -18,7 +18,7 @@ var fs = {
     
     //add the divs
     for(var i=0; i < data.length; i++){
-      $("#tagsContent").append("<div class='tag'> <span class='tagtext'>" + data[i] + "</span></div>");
+      $("#tagsContent").append("<div class='tagcontainer'><span class='tagtext'>" + data[i] + "</span></div>");
     }
   }
 };
@@ -45,7 +45,6 @@ $(document).ready(function(){
 	newTagButton = $("#newTagButton");
 	newTagInput = $("#newTagInput");
   
-  console.log(bg);
   bg.setFs(fs); //Giving this script to the bg object so that it can add tags
   //tagsContainer.hide();
 	bg.retrievePosts();

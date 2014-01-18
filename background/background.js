@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var bg = {
     setFs: function(fsObj){
       bg.fs = fsObj;
@@ -20,8 +19,9 @@ var bg = {
         
         //Save changes
         chrome.storage.sync.set({"posts": array}, function() {
+        
         });
-      }
+      });
     },
 
     
@@ -31,7 +31,7 @@ var bg = {
         if(!data){
           res = ["blah", "bluh", "blih"];
         }
-        bg.fs.setTags(data);
+        bg.fs.setTags(["blah", "bluh", "blih"]);
       });
     },
     
@@ -43,11 +43,11 @@ var bg = {
 
     retrieveInterval: function(intervalValue) {
     
-    },
-}
+    }
+};
 
 
-
+/*
 var tumblr = require('tumblr.js');
 
 var oauth = ChromeExOAuth.initBackgroundPage({
@@ -74,3 +74,4 @@ function onAuthorized() {
 };
 
 oauth.authorize(onAuthorized);
+*/
