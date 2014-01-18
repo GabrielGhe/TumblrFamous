@@ -18,7 +18,7 @@ var fs = {
     
     //add the divs
     for(var i=0; i < data.length; i++){
-      $("#tagsContent").append("<div class='tagcontainer'><span class='tagtext'>" + data[i] + "</span></div>");
+      $("#tagsContent").append("<div class='tagcontainer'><span class='tagtext'>" + data[i] +"<img src='ui/delete.png'></span></div>");
     }
   }
 };
