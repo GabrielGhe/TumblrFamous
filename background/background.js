@@ -1,7 +1,8 @@
 var bg = {  
-  saveTags: function savePost (post) {
+  saveTags: function(post) {
       // by passing an object you can define default values e.g.: []
       chrome.storage.local.get({posts: []}, function (result) {
+      
         // the input argument is ALWAYS an object containing the queried keys
         // so we select the key we need
         var posts = result.posts;
@@ -28,7 +29,7 @@ var bg = {
       });
     },
 
-    saveInterval: function saveInterval(intervalValue) {
+    saveInterval: function(intervalValue) {
       chrome.storage.local.set((interval: intervalValue), function (result) {
         console.log(result.interval);
       });
@@ -40,7 +41,7 @@ var bg = {
       });
     },
 
-    authenticateUser: function authenticateUser(username, password) {
+    authenticateUser: function(username, password) {
       var consumer = {};
 
       consumer.example = { 
