@@ -11,6 +11,18 @@ var newTagButton;//add new tag button
 var newTagInput;//input div for tag name
 var tags;
 
+//front script object
+var fs = {
+  setTags: function(data){
+    tags = data;
+    
+    //add the divs
+    for(var i=0; i < data.length; i++){
+      $("#tagsContent").append("<div class='tag'> <span class='tagtext'>" + data[i] + "</span></div>");
+    }
+  }
+};
+
 /*
  Script for TumblrFamous
  @author: Kelly li
@@ -33,10 +45,10 @@ $(document).ready(function(){
 	newTagButton = $("#newTagButton");
 	newTagInput = $("#newTagInput");
   
-  //tagsContainer.hide();
   console.log(bg);
-	tags = bg.retrievePosts();
-  console.log(tags);
+  bg.setFs(fs); //Giving this script to the bg object so that it can add tags
+  //tagsContainer.hide();
+	bg.retrievePosts();
   
   //authentication button click event
   authButton.click(function(){
@@ -48,12 +60,6 @@ $(document).ready(function(){
     loginContainer.hide();
     tagsContainer.fadeIn(200);
   });
-	
-	//put up divs
-	for(var i=0; i < tags.length; i++){
-		//TODO
-	}
-	
 	
 	/* * * * * * * * *
         EVENTS
