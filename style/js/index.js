@@ -33,10 +33,10 @@ $(document).ready(function(){
 	newTagButton = $("#newTagButton");
 	newTagInput = $("#newTagInput");
   
-  tagsContainer.hide();
+  //tagsContainer.hide();
   console.log(bg);
 	tags = bg.retrievePosts();
-  
+  console.log(tags);
   
   //authentication button click event
   authButton.click(function(){

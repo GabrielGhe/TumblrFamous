@@ -29,7 +29,6 @@ var bg = {
   saveTags: function(post) {
       // by passing an object you can define default values e.g.: []
       chrome.storage.local.get({posts: []}, function (result) {
-      
         // the input argument is ALWAYS an object containing the queried keys
         // so we select the key we need
         var posts = result.posts;
@@ -47,17 +46,16 @@ var bg = {
     },
 
     retrievePosts: function() {
+      var x;
       chrome.storage.local.get('posts', function (result) {
-        
-        if(!result.posts){
-          result.posts = [];
-        }
-        return result.posts;
+        x = [];
       });
+      
+      return [];
     },
 
     saveInterval: function(intervalValue) {
-      chrome.storage.local.set((interval: intervalValue), function (result) {
+      chrome.storage.local.set({interval: intervalValue}, function (result) {
         console.log(result.interval);
       });
     },

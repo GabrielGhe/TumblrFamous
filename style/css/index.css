@@ -35,10 +35,16 @@ img{
  * Login IDs
  *
  * * * * * * */
-#loginContainer, #tagsContainer, #setContainer{
+#loginContainer{
+	display:none;
 	padding-left: 30px;
 	padding-right: 30px;
 }
+#tagsContainer, #setContainer{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
 #password{
 	margin-top: -10px;
 }
@@ -76,3 +82,23 @@ img{
  * Tags IDs
  *
  * * * * * * */
+ 
+#tagsHeader{
+  height:50px;
+  width:100%;
+  background-color:blue;
+}
+
+#tagsContent{
+  height:250px;
+  width:100%;
+  margin-top:10px;
+  background-color:purple;
+  overflow: scroll;
+}
+
+.tag{
+  width:100%;
+  margin:0 0 10px 0;
+  background-color:red;
+}
