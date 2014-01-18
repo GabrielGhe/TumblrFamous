@@ -117,8 +117,8 @@ input:focus{
 	color: white;
 	font-weight: bold;
 	text-align: center;
-	font-size: 120%;
-	line-height: 16px;
+	font-size: 100%;
+	line-height: 20px;
 }
 
 #tagsContent{
