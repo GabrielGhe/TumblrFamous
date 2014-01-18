@@ -10,7 +10,6 @@ var tags;
  @author: Kelly li
  @author: Gabriel Gheorghian
  @author: Matthew Kuzyk
- 
  */
 $(document).ready(function(){
 	/* * * * * * * * *
@@ -28,63 +27,78 @@ $(document).ready(function(){
 	
 	
 	/* * * * * * * * *
-        EVENTS 
+        EVENTS
 	 * * * * * * * * */
-	 
+
 	/*
 	######
 	## newTagButton click event ##
 	######
 	*/
 	newTagButton.click(function(){
-		var tagInput = newTagInput.val();
-		var good = 0;	//0 means good
-		
-		//check if the values saved are valid
-		if(tagInput.trim() == ""){
-			good = 1; //1 means invalid name
-		}
-		
-		//check if the tag already exists
-		for(var i=0; i < tags.length; i++){
-			if(tags[i].tagName == tagInput){
-				good = 2; //2 means already existing tag
-			}
-		}
-		
-		/*
-		0 is good
-		1 means invalid tag name
-		2 means already existing tag name
-		*/
-		infoDiv.removeClass("infoGood").removeClass("infoBadName").removeClass("infoExists");
-		switch(good){
-			case 0:
-				//set class of info to good
-				infoDiv.addClass("infoGood");
-				infoDiv.html("New tag added").show().delay(1000).hide();
-				
-				//send new tag to bg to save
-				bg.saveTags({tagName: tagInput});
-				
-				//create and append new div for new tag
-				//TODO
-				
-				//empty div content
-				newTagInput.val("");
-				newMaxInput.val(0);
-				break;
-			case 1:
-				//set class of info to invalid name
-				infoDiv.addClass("infoBadName");
-				infoDiv.html("Invalid tag name").show().delay(1000).hide();
-				break;
-			case 2:
-				//set class of info to tag already exists
-				infoDiv.addClass("infoExists");
-				infoDiv.html("Tag already exists").show().delay(1000).hide();
-				break;
-			default:break;
-		}
+    $(this).hide();
+    newTagInput.show();
+  }
+  
+  
+  /*
+	######
+	## newTagInput enter key pressed ##
+	######
+	*/
+  newTagInput.keyup(function (e) {
+    if (e.keyCode == 13) {
+    
+      var tagInput = newTagInput.val();
+      var good = 0;	//0 means good
+      
+      //check if the values saved are valid
+      if(tagInput.trim() == ""){
+        good = 1; //1 means invalid name
+      }
+      
+      //check if the tag already exists
+      for(var i=0; i < tags.length; i++){
+        if(tags[i].tagName == tagInput){
+          good = 2; //2 means already existing tag
+        }
+      }
+      
+      /*
+      0 is good
+      1 means invalid tag name
+      2 means already existing tag name
+      */
+      infoDiv.removeClass("infoGood").removeClass("infoBadName").removeClass("infoExists");
+      switch(good){
+        case 0:
+          //set class of info to good
+          infoDiv.addClass("infoGood");
+          infoDiv.html("New tag added").show().delay(1000).hide();
+          
+          //send new tag to bg to save
+          bg.saveTags({tagName: tagInput});
+          
+          //create and append new div for new tag
+          //TODO
+          
+          //empty div content
+          newTagInput.val("");
+          newTagInput.hide();
+          newTagButton.show();
+          break;
+        case 1:
+          //set class of info to invalid name
+          infoDiv.addClass("infoBadName");
+          infoDiv.html("Invalid tag name").show().delay(1000).hide();
+          break;
+        case 2:
+          //set class of info to tag already exists
+          infoDiv.addClass("infoExists");
+          infoDiv.html("Tag already exists").show().delay(1000).hide();
+          break;
+        default:break;
+      }
+    }
 	});
 });
