@@ -148,8 +148,7 @@ $(document).ready(function(){
           }
         }
       }
-    }
-  });
+    
       
       /*
       0 is good
@@ -194,4 +193,6 @@ $(document).ready(function(){
           break;
         default:break;
       }
+    }
+  });
 });

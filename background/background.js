@@ -30,8 +30,6 @@ var bg = {
     
     retrievePosts: function() {
       chrome.storage.sync.get("posts", function(data) {
-        console.log("inside retrievePosts");
-        console.log(data);
         res = data.posts;
         if(!data.posts){
           res = [];
@@ -51,11 +49,11 @@ var bg = {
     },
 
     deletePost: function(index) {
-      console.log("Anyone?");
       chrome.storage.sync.get("posts", function(data) {
         res = data.posts;
         console.log(res);
-        chrome.storage.sync.set({"posts": res.splice(index, 1)}, function() {
+        res.splice(index, 1)
+        chrome.storage.sync.set({"posts": res}, function() {
         });
       });
     }
