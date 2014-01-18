@@ -109,7 +109,6 @@ input:focus{
 }
 
 #addbutton{
-
 	float: left;
 	width: 20px;
 	height: 20px;
@@ -118,6 +117,8 @@ input:focus{
 	color: white;
 	font-weight: bold;
 	text-align: center;
+	font-size: 120%;
+	line-height: 16px;
 }
 
 #tagsContent{
