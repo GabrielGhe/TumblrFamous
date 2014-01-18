@@ -71,7 +71,7 @@ $(document).ready(function(){
 	*/
 	newTagButton.click(function(){
     $(this).hide();
-    console.log("test");
+    newTagInput.show();
   });
   
   
