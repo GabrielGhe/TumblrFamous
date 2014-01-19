@@ -5,7 +5,7 @@
   "description": "Reblogging chrome extension for tumblr",
   "version": "1.0",
   
-  "permissions": ["storage", "background"],
+  "permissions": ["storage", "background", "http://www.tumblr.com/*"],
   "background": {
     "scripts": ["background/background.js"]
   },

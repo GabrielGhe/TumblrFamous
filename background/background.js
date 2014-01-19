@@ -2,7 +2,6 @@ var bg = {
     setFs: function(fsObj){
       bg.fs = fsObj;
     },
-
     
     saveTags: function(post) {
       //We get then we set
@@ -56,34 +55,37 @@ var bg = {
         chrome.storage.sync.set({"posts": res}, function() {
         });
       });
+    },
+    
+    getTagsForLoop: function(){
+      chrome.storage.sync.get("posts", function(data) {
+        res = data.posts;
+        if(!data.posts){
+          res = [];
+        }
+        bg.sendRequestWith(res);
+      });
+    },
+    
+    sendRequestWith: function(data){
+      console.log(JSON.stringify(data));
+      /*
+      $.ajax({
+        type: "GET",
+        //the url where you want to sent the userName and password to
+        url: '',
+        dataType: 'json',
+        async: false,
+        //json object to sent to the authentication url
+        data: JSON.stringify(data) ,
+        success: function () {}
+      });
+    */
     }
 };
 
-// var tumblr = require('lib/js/tumblr.js');
-
-// var oauth = ChromeExOAuth.initBackgroundPage({
-//   'request_url': "http://www.tumblr.com/oauth/request_token",
-//   'authorize_url': "http://www.tumblr.com/oauth/authorize",
-//   'access_url': "http://www.tumblr.com/oauth/access_token",
-//   'consumer_key': "NugbEX3qh96IleVqn2eGLTphq8WWFb1NDhC15XfcdHm5xtjdVb",
-//   'consumer_secret': "8j0CkWdhKKrxuokj2OZEPH43uvgFf9eReKzFYI57ubXkapBnEe"
-// });
-
-// function callback(resp, xhr) {
-//   // ... Process text response ...
-// };
-
-// function onAuthorized() {
-//   var url = 'api.tumblr.com/v2/blog/foxpapered/posts';
-//   var request = {
-//     'method': 'GET',
-//     'parameters': {'alt': 'json'}
-//   };
-//   console.log("whew");
-//   // Send: GET https://docs.google.com/feeds/default/private/full?alt=json
-//   oauth.sendSignedRequest(url, callback, request);
-// };
-
-// function() {
-//   oauth.authorize(onAuthorized);
-// }
+setInterval(call, 10000);
+function call(){
+  console.log("hi");
+  bg.getTagsForLoop();
+}

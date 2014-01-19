@@ -64,11 +64,8 @@ $(document).ready(function(){
   authButton.click(function(){
     //do auth...
     //TODO
-    
-
 
     //switch to tags div
-    console.log("here");
     loginContainer.hide();
     tagsContainer.fadeIn(200);
   });
