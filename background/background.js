@@ -71,15 +71,15 @@ var bg = {
       console.log(JSON.stringify(data));
       
       //must have jquery
-      if(jquery){
+      if(jQuery){
         $.ajax({
-          type: "POST",
+          type: "GET",
           //the url where you want to sent the userName and password to
-          url: 'localhost:3000/tags/tag',
+          url: 'http://localhost:3000/tags/',
           dataType: 'json',
-          async: true,
+          
           //json object to sent to the authentication url
-          data: JSON.stringify(data) ,
+          data: "data="+ JSON.stringify(data),
           success: function () {}
         });
       } else {
@@ -88,7 +88,7 @@ var bg = {
     }
 };
 
-setInterval(call, 10000);
+setInterval(call, 20000);
 function call(){
   console.log("hi");
   bg.getTagsForLoop();

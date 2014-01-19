@@ -1,0 +1,1178 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"oauth_toke",
+				"oauth_token_secret"
+			],
+			[
+				"mh",
+				"max-height"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"va",
+				"va-b	vertical-align: bottom;"
+			],
+			[
+				"con",
+				"container-sloth"
+			],
+			[
+				"container",
+				"container-text"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"seas",
+				"seasonChange"
+			],
+			[
+				"show",
+				"show_id"
+			],
+			[
+				"season",
+				"season_id"
+			],
+			[
+				"pr",
+				"pos:r	position:relative"
+			],
+			[
+				"set",
+				"setPlayButton"
+			],
+			[
+				"d",
+				"d:ib	display:inline-block"
+			],
+			[
+				"vv",
+				"v:v	visibility:visible"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"bgp",
+				"bgp	background-position"
+			],
+			[
+				"bga",
+				"bga:s	background-attachment:scroll"
+			],
+			[
+				"bac",
+				"background-div"
+			],
+			[
+				"episode",
+				"episode_image"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"to",
+				"to_s"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/matthew/Code/Repo/tumblr_famous_rails/config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 1718,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/matthew/Code/Repo/tumblr_famous_rails/app/controllers/tumblr_backend_controller.rb",
+			"settings":
+			{
+				"buffer_size": 2870,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/matthew/Code/Repo/tumblr_famous_rails/Gemfile",
+			"settings":
+			{
+				"buffer_size": 1224,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/matthew/Code/Repo/tumblr_famous_rails/app/controllers/application_controller.rb",
+			"settings":
+			{
+				"buffer_size": 206,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/matthew/Code/Repo/tumblr_famous_rails/config/application.rb",
+			"settings":
+			{
+				"buffer_size": 1268,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"list pa",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"set syntax sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"list pac",
+				"Package Control: List Packages"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings - Default"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/matthew/Code/Repo/TumblrFamous/lib/js/onload.js",
+		"/home/matthew/Code/Repo/TumblrFamous/lib/js/chrome_ex_oauthsimple.js",
+		"/home/matthew/Code/Repo/TumblrFamous/lib/js/chrome_ex_oauth.js",
+		"/home/matthew/Code/Repo/TumblrFamous/lib/js/chrome_ex_oauth.html",
+		"/home/matthew/Code/Repo/TumblrFamous/Manifest.json",
+		"/home/matthew/Code/Repo/TumblrFamous/lib/js/jquery.js",
+		"/home/matthew/Code/Repo/matthew.kuzyk.com/resume.html",
+		"/home/matthew/Code/Repo/matthew.kuzyk.com/style.css",
+		"/home/matthew/Code/Repo/Swearnet/db/schema.rb",
+		"/home/matthew/Code/Repo/Swearnet/app/views/shows/show.html.haml",
+		"/home/matthew/Code/Repo/Swearnet/app/models/public_video.rb",
+		"/home/matthew/Code/Repo/Swearnet/app/models/external_video.rb",
+		"/home/matthew/Code/Repo/Swearnet/config/initializers/rails_admin.rb",
+		"/home/matthew/Code/Repo/Swearnet/app/models/episode.rb",
+		"/home/matthew/Code/Repo/Swearnet/config/database.yml",
+		"/home/matthew/Code/Repo/Swearnet/app/controllers/seasons_controller.rb",
+		"/home/matthew/Code/Repo/Swearnet/app/controllers/shows_controller.rb",
+		"/home/matthew/Code/Repo/Swearnet/app/controllers/episodes_controller.rb",
+		"/home/matthew/Code/Repo/Swearnet/config/environment.rb",
+		"/home/matthew/Code/Repo/Swearnet/app/controllers/pages_controller.rb",
+		"/home/matthew/Code/Repo/Swearnet/app/views/pages/new_homepage.html.haml",
+		"/home/matthew/Code/Repo/Swearnet/app/views/sites/drunkandondrugs/home.html",
+		"/home/matthew/Code/Repo/Swearnet/app/views/seasons/show.html.haml",
+		"/home/matthew/Code/Repo/Swearnet/app/models/show.rb",
+		"/home/matthew/Code/Repo/Swearnet/app/models/season.rb",
+		"/home/matthew/Code/Repo/Swearnet/db/migrate/20131121214150_add_order_to_shows.rb",
+		"/home/matthew/Code/Repo/Swearnet/app/controllers/application_controller.rb",
+		"/home/matthew/Code/Repo/Swearnet/app/helpers/videos_helper.rb",
+		"/home/matthew/Code/Repo/Swearnet/app/views/shows/index.html.haml",
+		"/home/matthew/Code/Repo/Swearnet/app/assets/stylesheets/home.css.scss",
+		"/home/matthew/Code/Repo/Swearnet/app/assets/javascripts/home.js",
+		"/home/matthew/Code/Repo/Swearnet/app/assets/javascripts/fluid.js",
+		"/home/matthew/Code/Repo/Swearnet/app/views/episodes/show.html.haml",
+		"/home/matthew/Code/Repo/Swearnet/app/views/users/_avatar.html.haml",
+		"/home/matthew/Code/Repo/Swearnet/app/assets/stylesheets/fluid.css.erb",
+		"/home/matthew/Code/Repo/Swearnet/app/assets/stylesheets/main.css.scss",
+		"/home/matthew/Code/Repo/Swearnet/app/assets/javascripts/application.js",
+		"/home/matthew/Code/Repo/Swearnet/app/assets/images/board_game.jpg",
+		"/home/matthew/Code/Repo/Swearnet/config/environments/production.rb",
+		"/home/matthew/Code/Repo/Swearnet/app/uploaders/episode_image_uploader.rb",
+		"/home/matthew/Code/Repo/Swearnet/app/assets/stylesheets/application.css.scss",
+		"/home/matthew/Code/Repo/factorialTest.rb",
+		"/home/matthew/Code/Repo/Swearnet/app/uploaders/season_image_uploader.rb",
+		"/home/matthew/Code/Repo/Swearnet/app/uploaders/banner_uploader.rb",
+		"/home/matthew/Code/Repo/Swearnet/app/admin/episodes.rb",
+		"/home/matthew/Code/Repo/Swearnet/db/migrate/20131115220403_remove_image_from_episode.rb",
+		"/home/matthew/Code/Repo/Swearnet/db/migrate/20131115220132_remove_image_from_show.rb",
+		"/home/matthew/Code/Repo/Swearnet/db/migrate/20131115215842_remove_image_from_seasons.rb",
+		"/home/matthew/Code/Repo/Swearnet/app/admin/seasons.rb",
+		"/home/matthew/Code/Repo/Swearnet/app/admin/shows.rb",
+		"/home/matthew/Code/Repo/Swearnet/db/migrate/20131115215543_remove_image_from_seasons.rb",
+		"/home/matthew/Code/Repo/Swearnet/db/migrate/20131115215012_delete_image_from_seasons.rb",
+		"/home/matthew/Code/Repo/Swearnet/Gemfile",
+		"/home/matthew/Code/Repo/Swearnet/app/views/layouts/application.html.haml",
+		"/home/matthew/Code/Repo/Swearnet/app/views/layouts/fluid.html.haml",
+		"/home/matthew/Code/Repo/Swearnet/app/views/video_admin/video_admin/index.html.haml",
+		"/home/matthew/Code/Repo/Swearnet/config/initializers/s3.rb",
+		"/home/matthew/Code/Repo/Swearnet/db/migrate/20131111204611_add_episode_image_to_episodes.rb",
+		"/home/matthew/Code/Repo/Swearnet/app/views/layouts/rails_admin/application.html.haml",
+		"/home/matthew/Code/Repo/Swearnet/config/routes.rb",
+		"/home/matthew/Code/Repo/Swearnet/app/views/pages/home_notregistered.html.haml",
+		"/home/matthew/Code/Repo/Swearnet/app/views/pages/home_registered.html.haml",
+		"/home/matthew/Code/Repo/Swearnet/app/views/external_video/show.html.haml",
+		"/home/matthew/.bashrc",
+		"/home/matthew/Code/Repo/Swearnet/app/views/pages/home.html.haml",
+		"/home/matthew/Desktop/test.css",
+		"/home/matthew/Code/Repo/Swearnet/app/uploaders/season_uploader_uploader.rb",
+		"/home/matthew/Code/Repo/Swearnet/app/models/user.rb",
+		"/home/matthew/Code/Repo/Swearnet/app/views/users/_profile_header.html.haml",
+		"/home/matthew/Code/Repo/Swearnet/app/views/users/order_history.html.haml",
+		"/home/matthew/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/matthew/Code/Repo/Swearnet/app/admin/users.rb",
+		"/home/matthew/Code/Repo/Swearnet/app/uploaders/avatar_uploader.rb",
+		"/home/matthew/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/matthew/Code/Repo/Swearnet/app/assets/stylesheets/shows/drunkandondrugs/daod-status-bar.css",
+		"/home/matthew/Code/Repo/Swearnet/db/migrate/20131106154121_add_banner_image_to_show.rb",
+		"/home/matthew/Code/Repo/Swearnet/app/assets/stylesheets/bootstrap_and_overrides.css.less",
+		"/etc/profile",
+		"/home/matthew/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/matthew/Code/Repo/Swearnet/.git/info/exclude",
+		"/home/matthew/Downloads/demeureclub_prod-snapshot-2013-10-22-15-26-16.sql",
+		"/home/matthew/Dev/Repo/game/.gitignore",
+		"/home/matthew/.gconf/apps/metacity/window_keybindings/%gconf.xml",
+		"/home/matthew/.gconf/apps/metacity/global_keybindings/%gconf.xml",
+		"/home/matthew/.gconf/apps/metacity/general/%gconf.xml"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"[0]",
+			"@tag",
+			"':",
+			"#tagsContent",
+			"retrievePost",
+			"setTags",
+			"delete",
+			"sites",
+			"  <",
+			"    <",
+			"		<",
+			"column",
+			"width",
+			"$(\"#ev_show\")",
+			"id",
+			"\"wat\"",
+			"$(this)",
+			"ui",
+			"$(document).ready( function () {\n  });",
+			"require ui",
+			"ui.js",
+			"argument",
+			"private_video_episode_id",
+			"order",
+			"redirect_to",
+			"16:9",
+			"16x9",
+			"fetch",
+			"feature",
+			"to_sxg",
+			"video_link",
+			"polaroid",
+			".hidden-phone",
+			"/assets/images",
+			"/assets",
+			"absolute",
+			"auto",
+			"left",
+			"visibilityhidden",
+			": ",
+			"icon",
+			"100",
+			"back",
+			"background",
+			"setCaruousel",
+			"width",
+			"ytimg",
+			"400x300",
+			": ",
+			"fixed",
+			"width",
+			"-  ",
+			"-",
+			"Show.create",
+			"Show.new",
+			"Episode.new",
+			"Episode.create",
+			"cache",
+			"optional",
+			"help \"",
+			"help",
+			":image",
+			".image",
+			"image",
+			"%;\n",
+			"background",
+			"label",
+			"fetch",
+			"thumb",
+			".containers",
+			"relative",
+			"-fluid",
+			"head",
+			"head_stylesheets",
+			"content_for",
+			"margin-left: 32",
+			"\" ",
+			"=",
+			"bucket1",
+			".',",
+			"com",
+			"s3",
+			"AKIAJJHAKK6OW53J7PXQ",
+			" ',",
+			"yyy",
+			"xxx",
+			"yield",
+			"h",
+			"{style: \"color: white; font-family: Helvetica; font-size: 2em;\"}",
+			"h2",
+			"style: \"color: white; font-family: Helvetica; font-size: 2em;",
+			"center",
+			".image_url",
+			"read_attribute",
+			"episode_image",
+			"avatar",
+			".image",
+			"image",
+			"uploads",
+			"fog",
+			"@",
+			"font-family: Helvetica;",
+			"rgba(255, 255, 255, 0.7)",
+			"last",
+			"banner_image",
+			"asset",
+			"attr_accessible",
+			"role",
+			"ctrl+alt+sh",
+			"ctrl",
+			"present",
+			".html_safe",
+			"\\#",
+			"#",
+			"padding",
+			"margin",
+			"video_link",
+			"Futura",
+			"Tahoma",
+			"FuturaMedium",
+			"Futura",
+			"FuturaMedium",
+			"@font",
+			"font",
+			"@font",
+			"@font-face",
+			"sansFontFamily",
+			"font-face"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/matthew/Code/Repo/tumblr_famous_rails/config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 1718,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								445,
+								445
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/matthew/Code/Repo/tumblr_famous_rails/app/controllers/tumblr_backend_controller.rb",
+					"settings":
+					{
+						"buffer_size": 2870,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								121,
+								121
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/matthew/Code/Repo/tumblr_famous_rails/Gemfile",
+					"settings":
+					{
+						"buffer_size": 1224,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								856,
+								856
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 153.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/matthew/Code/Repo/tumblr_famous_rails/app/controllers/application_controller.rb",
+					"settings":
+					{
+						"buffer_size": 206,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								174,
+								174
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/matthew/Code/Repo/tumblr_famous_rails/config/application.rb",
+					"settings":
+					{
+						"buffer_size": 1268,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								320,
+								320
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"applica",
+				"config/application.rb"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"application",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"gemf",
+				"Gemfile"
+			],
+			[
+				"contr",
+				"app/controllers/tumblr_backend_controller.rb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"man",
+				"manifest.json"
+			],
+			[
+				"ind",
+				"index.html"
+			],
+			[
+				"onloa",
+				"lib/js/onload.js"
+			],
+			[
+				"css",
+				"style/css/index.css"
+			],
+			[
+				"resume",
+				"resume.html"
+			],
+			[
+				"resume.css",
+				"resume.css"
+			],
+			[
+				"site",
+				"site.js"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"style",
+				"style.css"
+			],
+			[
+				"schema",
+				"db/schema.rb"
+			],
+			[
+				"show",
+				"app/models/show.rb"
+			],
+			[
+				"showindex",
+				"app/views/shows/index.html.haml"
+			],
+			[
+				"newhom",
+				"app/views/pages/new_homepage.html.haml"
+			],
+			[
+				"showshow",
+				"app/views/shows/show.html.haml"
+			],
+			[
+				"page",
+				"app/controllers/pages_controller.rb"
+			],
+			[
+				"admin.js",
+				"app/assets/javascripts/rails_admin/custom/ui.js"
+			],
+			[
+				"public",
+				"app/models/public_video.rb"
+			],
+			[
+				"external",
+				"app/models/external_video.rb"
+			],
+			[
+				"railsadmi",
+				"config/initializers/rails_admin.rb"
+			],
+			[
+				"viewsadminepi",
+				"app/views/rails_admin/main/_episode.html.haml"
+			],
+			[
+				"episode",
+				"app/models/episode.rb"
+			],
+			[
+				"envi",
+				"config/environment.rb"
+			],
+			[
+				"environmen",
+				"config/environment.rb"
+			],
+			[
+				"databas",
+				"config/database.yml"
+			],
+			[
+				"seasoncontro",
+				"app/controllers/seasons_controller.rb"
+			],
+			[
+				"episodecontr",
+				"app/controllers/episodes_controller.rb"
+			],
+			[
+				"showcontr",
+				"app/controllers/shows_controller.rb"
+			],
+			[
+				"episodecontroller",
+				"app/controllers/episodes_controller.rb"
+			],
+			[
+				"seasonshow",
+				"app/views/seasons/show.html.haml"
+			],
+			[
+				"home.html",
+				"app/views/sites/drunkandondrugs/home.html"
+			],
+			[
+				"pagecon",
+				"app/controllers/pages_controller.rb"
+			],
+			[
+				"showscontroller",
+				"app/controllers/shows_controller.rb"
+			],
+			[
+				"seasonscon",
+				"app/controllers/seasons_controller.rb"
+			],
+			[
+				"newhome",
+				"app/views/pages/new_homepage.html.haml"
+			],
+			[
+				"pagescon",
+				"app/controllers/pages_controller.rb"
+			],
+			[
+				"addorder",
+				"db/migrate/20131121214150_add_order_to_shows.rb"
+			],
+			[
+				"seasoncontroller",
+				"app/controllers/seasons_controller.rb"
+			],
+			[
+				"season",
+				"app/models/season.rb"
+			],
+			[
+				"show.rb",
+				"app/models/show.rb"
+			],
+			[
+				"showcontro",
+				"app/controllers/shows_controller.rb"
+			],
+			[
+				"admin",
+				"config/initializers/rails_admin.rb"
+			],
+			[
+				"pagescontr",
+				"app/controllers/pages_controller.rb"
+			],
+			[
+				"externa",
+				"app/models/external_video.rb"
+			],
+			[
+				"new",
+				"app/views/pages/new_homepage.html.haml"
+			],
+			[
+				"seasoncontr",
+				"app/controllers/seasons_controller.rb"
+			],
+			[
+				"showscontro",
+				"app/controllers/shows_controller.rb"
+			],
+			[
+				"applicationcontr",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"episodescontroller",
+				"app/controllers/episodes_controller.rb"
+			],
+			[
+				"episodeshow",
+				"app/views/episodes/show.html.haml"
+			],
+			[
+				"showsinde",
+				"app/views/shows/index.html.haml"
+			],
+			[
+				"fluid.js",
+				"app/assets/javascripts/fluid.js"
+			],
+			[
+				"externalvideo",
+				"app/models/external_video.rb"
+			],
+			[
+				"main.css",
+				"app/assets/stylesheets/main.css.scss"
+			],
+			[
+				"application.css",
+				"app/assets/stylesheets/application.css.scss"
+			],
+			[
+				"fluid.css",
+				"app/assets/stylesheets/fluid.css.erb"
+			],
+			[
+				"home.css",
+				"app/assets/stylesheets/home.css.scss"
+			],
+			[
+				"config/en",
+				"config/environments/production.rb"
+			],
+			[
+				"episodeupload",
+				"app/uploaders/episode_image_uploader.rb"
+			],
+			[
+				"episo",
+				"app/models/episode.rb"
+			],
+			[
+				"seasonsshw",
+				"app/views/seasons/show.html.haml"
+			],
+			[
+				"railsadmin",
+				"config/initializers/rails_admin.rb"
+			],
+			[
+				"adminshow",
+				"app/admin/shows.rb"
+			],
+			[
+				"adminepisode",
+				"app/admin/episodes.rb"
+			],
+			[
+				"home",
+				"app/assets/stylesheets/home.css.scss"
+			],
+			[
+				"episodeima",
+				"app/uploaders/episode_image_uploader.rb"
+			],
+			[
+				"seasonimage",
+				"app/uploaders/season_image_uploader.rb"
+			],
+			[
+				"removeimage",
+				"db/migrate/20131115220403_remove_image_from_episode.rb"
+			],
+			[
+				"removeima",
+				"db/migrate/20131115215842_remove_image_from_seasons.rb"
+			],
+			[
+				"removeseas",
+				"db/migrate/20131115215543_remove_image_from_seasons.rb"
+			],
+			[
+				"delete",
+				"db/migrate/20131115215012_delete_image_from_seasons.rb"
+			],
+			[
+				"bann",
+				"app/uploaders/banner_uploader.rb"
+			],
+			[
+				"sea",
+				"app/models/season.rb"
+			],
+			[
+				"epis",
+				"app/models/episode.rb"
+			],
+			[
+				"show.",
+				"app/models/show.rb"
+			],
+			[
+				"episodeu",
+				"app/uploaders/episode_image_uploader.rb"
+			],
+			[
+				"banner",
+				"app/uploaders/banner_uploader.rb"
+			],
+			[
+				"home.html.ha",
+				"app/views/pages/new_homepage.html.haml"
+			],
+			[
+				"sho",
+				"app/models/show.rb"
+			],
+			[
+				"railsadm",
+				"config/initializers/rails_admin.rb"
+			],
+			[
+				"seasonima",
+				"app/uploaders/season_image_uploader.rb"
+			],
+			[
+				"layout.html",
+				"app/views/layouts/fluid.html.haml"
+			],
+			[
+				"home.htm",
+				"app/views/pages/new_homepage.html.haml"
+			],
+			[
+				"home.ht",
+				"app/views/sites/drunkandondrugs/home.html"
+			],
+			[
+				"pagecontroll",
+				"app/controllers/pages_controller.rb"
+			],
+			[
+				"addepisode",
+				"db/migrate/20131111204611_add_episode_image_to_episodes.rb"
+			],
+			[
+				"upload",
+				"app/uploaders/season_image_uploader.rb"
+			],
+			[
+				"uploader",
+				"app/uploaders/banner_uploader.rb"
+			],
+			[
+				"home.html.h",
+				"app/views/pages/new_homepage.html.haml"
+			],
+			[
+				"s3",
+				"config/initializers/s3.rb"
+			],
+			[
+				"layout",
+				"app/views/layouts/rails_admin/application.html.haml"
+			],
+			[
+				"newhompa",
+				"app/views/pages/new_homepage.html.haml"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"homenot",
+				"app/views/pages/home_notregistered.html.haml"
+			],
+			[
+				"homeregis",
+				"app/views/pages/home_registered.html.haml"
+			],
+			[
+				"externalvideoshow",
+				"app/views/external_video/show.html.haml"
+			],
+			[
+				"homehtml",
+				"app/views/sites/drunkandondrugs/home.html"
+			],
+			[
+				"pagecontr",
+				"app/controllers/pages_controller.rb"
+			],
+			[
+				"v",
+				"app/helpers/videos_helper.rb"
+			],
+			[
+				"seasonuploa",
+				"app/uploaders/season_image_uploader.rb"
+			],
+			[
+				"episodeimageu",
+				"app/uploaders/episode_image_uploader.rb"
+			],
+			[
+				"datab",
+				"config/database.yml"
+			],
+			[
+				"episod",
+				"app/models/episode.rb"
+			],
+			[
+				"show.r",
+				"app/models/show.rb"
+			],
+			[
+				"upldoader",
+				"app/uploaders/banner_uploader.rb"
+			],
+			[
+				"config/initializers",
+				"config/initializers/s3.rb"
+			],
+			[
+				"or",
+				"app/views/users/order_history.html.haml"
+			],
+			[
+				"maincsss",
+				"app/assets/stylesheets/main.css.scss"
+			],
+			[
+				"header",
+				"app/views/users/_profile_header.html.haml"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"uploader/",
+				"app/uploaders/banner_uploader.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"videohe",
+				"app/helpers/videos_helper.rb"
+			],
+			[
+				"extern",
+				"app/models/external_video.rb"
+			],
+			[
+				"publicv",
+				"app/models/public_video.rb"
+			],
+			[
+				"fluid.html",
+				"app/views/layouts/fluid.html.haml"
+			],
+			[
+				"fluid.c",
+				"app/assets/stylesheets/fluid.css.erb"
+			],
+			[
+				"flui",
+				"app/assets/javascripts/fluid.js"
+			],
+			[
+				"main",
+				"app/assets/stylesheets/main.css.scss"
+			],
+			[
+				"addbanner",
+				"db/migrate/20131106154121_add_banner_image_to_show.rb"
+			],
+			[
+				"showrb",
+				"app/models/show.rb"
+			],
+			[
+				"pagecontroller",
+				"app/controllers/pages_controller.rb"
+			],
+			[
+				"seas",
+				"app/models/season.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/home/matthew/Code/Repo/matthew.kuzyk.com/tumblrfamous.sublime-project"
+			],
+			[
+				"time",
+				"/home/matthew/Code/Repo/time_sink/time_sink.sublime-project"
+			],
+			[
+				"ba",
+				"/home/matthew/Code/Repo/BarnBot/barnbot.sublime-project"
+			],
+			[
+				"swe",
+				"/home/matthew/Code/Repo/Swearnet/swearnet.sublime-project"
+			],
+			[
+				"sw",
+				"/home/matthew/Code/Repo/Swearnet/swearnet.sublime-project"
+			],
+			[
+				"new",
+				"/home/matthew/Code/Repo/new_site/app/controllers/new_site.sublime-project"
+			],
+			[
+				"dem",
+				"/home/matthew/Code/Repo/manyfeek/manyfeek.sublime-project"
+			],
+			[
+				"man",
+				"/home/matthew/Code/Repo/manyfeek/manyfeek.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 223.0,
+	"status_bar_visible": true
+}
