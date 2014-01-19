@@ -70,17 +70,21 @@ var bg = {
     sendRequestWith: function(data){
       console.log(JSON.stringify(data));
       
-      $.ajax({
-        type: "POST",
-        //the url where you want to sent the userName and password to
-        url: 'localhost:3000/tags/tag',
-        dataType: 'json',
-        async: true,
-        //json object to sent to the authentication url
-        data: JSON.stringify(data) ,
-        success: function () {}
-      });
-    
+      //must have jquery
+      if(jquery){
+        $.ajax({
+          type: "POST",
+          //the url where you want to sent the userName and password to
+          url: 'localhost:3000/tags/tag',
+          dataType: 'json',
+          async: true,
+          //json object to sent to the authentication url
+          data: JSON.stringify(data) ,
+          success: function () {}
+        });
+      } else {
+        //no jquery
+      }
     }
 };
 
