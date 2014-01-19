@@ -26,7 +26,8 @@ var fs = {
       a.append(b);
       $("#tagsContent").prepend(a);
       b.click(function () {
-        bg.deletePost(a.index());
+        console.log("In del event with " + $(this).parent().index());
+        bg.deletePost($(this).parent().index());
         $(this).parent().remove();
       });
     }
@@ -159,7 +160,6 @@ $(document).ready(function(){
       1 means invalid tag name
       2 means already existing tag name
       */
-      console.log(good);
       infoDiv.removeClass("infoGood").removeClass("infoBadName").removeClass("infoExists");
       switch(good){
         case 0:
@@ -179,7 +179,6 @@ $(document).ready(function(){
           a.append(b);
           $("#tagsContent").prepend(a);
           b.click(function () {
-            console.log("You made it this far");
             bg.deletePost(a.index());
             $(this).parent().remove();
           });

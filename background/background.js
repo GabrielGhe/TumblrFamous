@@ -15,10 +15,6 @@ var bg = {
         } else {
           array.push(post);
         }
-        
-        console.log("inside saveTags");
-        console.log(data);
-        
         //Save changes
         chrome.storage.sync.set({"posts": array}, function() {
         
@@ -49,9 +45,8 @@ var bg = {
 
     deletePost: function(index) {
       chrome.storage.sync.get("posts", function(data) {
-        res = data.posts;
-        console.log(res);
-        res.splice(index, 1)
+        res = data.posts;f
+        res.pop();
         chrome.storage.sync.set({"posts": res}, function() {
         });
       });
@@ -68,7 +63,6 @@ var bg = {
     },
     
     sendRequestWith: function(data){
-      console.log(JSON.stringify(data));
       
       //must have jquery
       if(jQuery){
@@ -90,6 +84,5 @@ var bg = {
 
 setInterval(call, 20000);
 function call(){
-  console.log("hi");
   bg.getTagsForLoop();
 }
